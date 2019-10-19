@@ -21,6 +21,10 @@
               #list-menu{
                    flex-direction: row;
               }
+              #menu{
+                   right: 80px;
+                   bottom: 30px;
+              }
         }
         .btmenu{
              margin: 5px;
