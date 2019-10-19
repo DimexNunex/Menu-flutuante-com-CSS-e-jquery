@@ -13,8 +13,8 @@
                  //verificando quando as variáveis sao maior e menor, assim definir se está subindo ou descendo
                if( startY > endY) move = "up";
                else if( startY < endY)move = "down";
-               if(move == "up") {$("#menu1").fadeIn("1000"); if(list_menuShow )$('#menu').fadeIn("1000");  }
-               else if(move == "down" ) { $('#menu1').fadeOut("1000");  $('#menu').fadeOut("1000"); if($("#menu").is(":visible"))list_menuShow = true; }
+               if(move == "up") {$("#menu1").fadeIn("300"); if(list_menuShow )$('#menu').fadeIn("300");  }
+               else if(move == "down" ) { $('#menu1').fadeOut("300");  $('#menu').fadeOut("300"); if($("#menu").is(":visible"))list_menuShow = true; }
            
         }
         //show, hide menu
