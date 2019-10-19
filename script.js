@@ -21,7 +21,42 @@
         // var para mostrar os botoes do menu quanto estavam abertos
         var list_menuShow  = false;
         $("#menu1").click(function(){ 
-               $('#menu').slideToggle("1000"); 
+               //$('#menu').slideToggle("1000");
+               var btmenu = $(".btmenu"), _timer, _index;
+               //animarion to hide
+                  
+                      if($("#menu").is(":visible")){ 
+                          _index = btmenu.length-1;
+                          _timer = setInterval(function(){ 
+                             if(_index > -1){
+                                btmenu[_index].style.display = "none";
+                                
+                                if(_index == 0){
+                                       clearInterval(_timer);
+                                       $("#menu").hide();
+                                }
+                           }
+                           _index--;
+                          },50);
+                       }
+                        //animation to show
+                       else{
+                           _index = 0;
+                       _timer = setInterval(function(){
+                           
+                           $("#menu").show();
+                           if(_index <  btmenu.length  ){
+                                btmenu[_index].style.display = "block";
+                              
+                                if(_index == btmenu.length-1){
+                                       clearInterval(_timer);
+                                       
+                                }
+                           }
+                           _index++;
+                          },50);
+                       }
+                //list menu var
                list_menuShow = false;
         });
         
