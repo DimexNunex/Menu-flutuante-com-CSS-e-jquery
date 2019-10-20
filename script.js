@@ -7,7 +7,7 @@
          
         //funcao chamada quando fazemos o scroll do nosso elemento
         var menu = document.getElementById("menu1"); 
-        document.body.onscroll = function(){
+        window.onscroll = function(){
                var move  = "none";
                  endY = document.body.scrollTop;
                  //verificando quando as variáveis sao maior e menor, assim definir se está subindo ou descendo
